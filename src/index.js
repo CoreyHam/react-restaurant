@@ -14,9 +14,8 @@ ReactDOM.render(
   
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
-        <Route path="menu" element={<Menu />} />
-      </Route>
+      <Route path="" element={<App />} />
+      <Route path="menu" element={<Menu />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')

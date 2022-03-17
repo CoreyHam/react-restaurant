@@ -16,4 +16,59 @@ code {
   width: 50px;
   height: 90px;
   margin-right: 40px;
+  animation: ease-out 3s spaceship;
+}
+
+.hero-image{
+  
+  height: 100vh;
+}
+.hero-container{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+
+}
+
+.hero{
+
+  width: 100vw;
+  height: 80vh;
+  background-image: url(https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.restName{
+  font-size: 10rem;
+}
+
+.about{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.icons{
+  width: 30vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+@keyframes spaceship {
+  from {
+    transform: translateX(900px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
 }
