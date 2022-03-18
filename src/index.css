@@ -1,3 +1,13 @@
+#root{
+  background-color: black;
+}
+
+.big-text{
+  padding: 30px;
+  background-color: black;
+  color: white;
+  margin-bottom: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,18 +15,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.navbar{
+  background-color: black;
+}
 .logo{
   width: 50px;
   height: 90px;
   margin-right: 40px;
-  animation: ease-out 3s spaceship;
+  animation: forwards 3s spaceship;
 }
 
 .hero-image{
@@ -62,7 +75,10 @@ code {
   display: flex;
   justify-content: space-around;
 }
-
+.aboutText{
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
 @keyframes spaceship {
   from {
     transform: translateX(900px);
@@ -71,4 +87,41 @@ code {
   to {
     transform: translateX(0px);
   }
+}
+
+.food-card-display{
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 50px;
+  text-align: left;
+}
+.food-card{
+  display: flex; 
+  flex-direction: column;
+  width: 35rem;
+  padding: 1.5rem;
+  background-color: rgb(0, 0, 0);
+}
+.food-card-display :hover{
+  background-color: rgb(75, 16, 16);
+}
+.food-card > .right-align {
+  margin-top: auto;
+  align-self: flex-end;
+}
+.food-card > h1{
+  margin-bottom: 2rem;
+}
+
+hr{
+  margin: 0 !important;
+  padding: 0;
+  width: 80%;
+}
+.sticky-top{
+  flex-wrap: wrap;
+  text-align: center;
 }
