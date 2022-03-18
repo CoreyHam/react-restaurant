@@ -10,17 +10,13 @@ import { Outlet } from 'react-router-dom';
 function NavbarComp() {
     return (
         <div>
-            <Navbar bg="dark" variant="dark" expand="lg">
+            <Navbar variant="dark" expand="lg">
                 <Container>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="/"><h1>HOME</h1></Nav.Link>
-                            <NavDropdown title={<h1>MENU</h1>} id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/menu">Appetizer</NavDropdown.Item>
-                                <NavDropdown.Item href="/menu">Burgers</NavDropdown.Item>
-                                <NavDropdown.Item href="/menu">Sandwiches</NavDropdown.Item>
-                            </NavDropdown>
+                            <Nav.Link href="menu"><h1>MENU</h1></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                     <ReactSVG src="img/OmniEats-White.svg" wrapper="svg" className='logo' />
